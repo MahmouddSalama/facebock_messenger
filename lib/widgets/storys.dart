@@ -45,6 +45,7 @@ class Story extends StatelessWidget {
                       radius: size.width * .0701,
                     )
                   : CircleAvatar(
+                backgroundColor: Colors.blueAccent,
                       child: Align(
                         alignment: Alignment.bottomRight,
                         child:usersList[index-1].onLine? CircleAvatar(
@@ -52,7 +53,7 @@ class Story extends StatelessWidget {
                           radius: 7,
                         ):null,
                       ),
-                      radius: size.width * .071,
+                      radius: 30,
                       backgroundImage: NetworkImage(usersList[index-1].imagUrl),
                     ),
             );
